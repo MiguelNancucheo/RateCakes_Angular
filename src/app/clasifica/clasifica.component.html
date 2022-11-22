@@ -1,0 +1,25 @@
+<div class="cont_cakes">
+  <div  class="col_flex01">
+    <a (click)="onClickImg()" [title]="cake.name"><img class="img_list" src="{{ cake.url }}" alt="{{ cake.name }}"></a>
+  </div>
+  <div class="col_flex02">
+    <form (ngSubmit)="rateCake()" method="post">
+      <select name="rate" [(ngModel)]="newComment.rate">
+        <option value=1>1 stars</option>
+        <option value=2>2 stars</option>
+        <option value=3>3 stars</option>
+        <option value=4>4 stars</option>
+        <option value=5>5 stars</option>
+      </select><br>
+      <input type="text"
+          name="comment" [(ngModel)]="newComment.comment"
+          [placeholder]="msgPlaceComment"><br>
+      <div class="contenedor">
+        <button type="submit" class="btn_rate">Rate!</button>
+        <p *ngIf="msgError" class="msg_error">{{ msgError}}</p>
+      </div>
+    </form>
+  </div>
+</div>
+
+

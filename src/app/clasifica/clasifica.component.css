@@ -1,0 +1,31 @@
+
+.cont_cakes {
+  display: flex;
+  /* justify-content:space-around; */
+}
+
+.col_flex01 {
+  flex: 2;
+  text-align: center;
+  min-width: 300px;
+}
+.col_flex02 {
+  flex: 3;
+}
+.img_list {
+  height: 150px;
+}
+
+select {
+  /* font-size: 18px; */
+  padding: 8px;
+  margin: 4px;
+  width: 200px;
+}
+
+.btn_rate {
+  margin: 5px;
+  padding: 10px;
+  width: 100px;
+  background: linear-gradient(to bottom, #CDDCF0,#425A6A 90%, #202020);
+}

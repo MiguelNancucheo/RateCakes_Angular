@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+span{
+  margin: 10px;
+}
+
+.tit_sumit {
+  border-bottom: 2px solid #66BBFF;
+  padding: 10px;
+  margin: 10px;
+}
+.contenedor{
+  font-size:medium;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col01{
+  flex: 2;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+.col02{
+  flex: 3;
+  margin: 10px;
+  padding: 10px;
+  height: 310px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+h1 {
+  margin: 5px 20px;
+}
+
+
+input {
+   width: 90%;
+  height: 20px;
+  padding: 10px;
+  margin: 5px;
+  font-size: medium;
+}
+
+button {
+  border: 0px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.btn_summit{
+  background-color: #66BBFF;
+  margin: 10px;
+  padding: 10px;
+  font-size:larger;
+}
+
+.msg_error{
+  color: red;
+  font-weight: bold;
+}

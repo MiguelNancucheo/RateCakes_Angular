@@ -1,0 +1,17 @@
+.img_detail {
+  height: 250px;
+}
+.cont_detail {
+  display: flex;
+  /* justify-content: space-around; */
+  margin: 10px;
+}
+.col01_detail {
+  text-align: center;
+  flex: 2;
+  margin: 5px;
+}
+.col02_detail {
+  flex: 3;
+  margin: 5px;
+}

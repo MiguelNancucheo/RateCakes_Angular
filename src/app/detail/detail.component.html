@@ -1,0 +1,14 @@
+<h1>Baked by {{ cake.name }}</h1>
+<div class="cont_detail">
+  <div class="col01_detail">
+    <img src="{{ cake.url }}"  alt="{{ cake.name }}" class="img_detail">
+  </div>
+  <div class="col02_detail">
+    <p *ngIf="cake.comments.length > 0">Average rating: {{ promedio }} Stars</p>
+    <p *ngIf="!(cake.comments.length > 0)">Sin Comentarios</p>
+    <article *ngFor="let comment of cake.comments">
+      <span>{{comment.comment}}</span><br>
+      <span>{{comment.rate}} stars</span><br><br>
+    </article>
+  </div>
+</div>

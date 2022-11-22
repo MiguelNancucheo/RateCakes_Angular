@@ -1,0 +1,16 @@
+<p class="tit_sumit">Submit a cake to be rated</p>
+<form (ngSubmit)="newCake_Service()">
+  <span>Baker name:</span><br>
+  <input type="text"
+          name="name" [(ngModel)]="newCake.name"
+          [required]="true" minlength="3" maxlength="50"
+          [placeholder]="msgPlaceCake"><br>
+  <span>Imag url:</span><br>
+  <input type="text"
+        name="url" [(ngModel)]="newCake.url"
+        [required]="true" minlength="10"
+        [placeholder]="msgPlaceUrl"><br>
+  <button  class="btn_summit">SUBMIT</button>
+  <div *ngIf="msgError"><span class="msg_error"> {{ msgError}} </span></div>
+</form>
+

@@ -1,4 +1,17 @@
-# 5RateCakes
+# Rate Cakes
+
+  ejercicio de Califica un pastel 
+  
+  Parte angular.
+  desarrollado con componentes, las cuales fueron hija de APP.Component y que transfieren datos entre las hijas y padre.
+
+
+
+
+
+
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
 
